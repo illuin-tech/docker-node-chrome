@@ -2,6 +2,6 @@
 
 Docker image with node and chrome headless
 
-Node version : 12.16.1
+Node version : 14.15.4
 
 Chrome version : latest
