@@ -1,4 +1,4 @@
-FROM node:14.17.6
+FROM node:14.18.1
 
 RUN apt-get update \
     && apt-get install -y wget gnupg \
