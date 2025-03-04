@@ -1,4 +1,4 @@
-FROM node:20.15.1
+FROM node:22.14.0
 
 RUN apt-get update \
     && apt-get install -y wget gnupg \
@@ -7,6 +7,8 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 libx11-xcb1 \
       --no-install-recommends \
+    && apt-get autoremove -y \
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["node"]
